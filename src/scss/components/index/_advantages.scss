@@ -1,0 +1,124 @@
+/* ? ======= ADVANTAGES START ======= */
+.advantages {
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  background-color: var(--color-text);
+  background-image: url(../img/us.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__content {
+    padding: 50px 69px;
+    background-color: var(--color-white);
+    border-left: 4px solid var(--color-title);
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    font-size: 23px;
+    color: var(--color-text);
+    gap: 17px;
+
+    &:not(:last-child) {
+      margin-bottom: 29px;
+    }
+  }
+
+  &__svg {
+    min-width: 33px;
+    max-height: 32px;
+    use {
+      fill: var(--color-normal-button);
+      // stroke: 4px;
+    }
+  }
+}
+/* ? ======= ADVANTAGES END ======= */
+/* ? ======= ADVANTAGES MEDIA START ======= */
+
+@media screen and (max-width: 769px) {
+  .advantages {
+    padding: 60px 20px;
+
+    &__container {
+      justify-content: center;
+    }
+
+    &__content {
+      width: 100%;
+      padding: 30px 30px 30px 70px;
+    }
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__item {
+      font-size: 20px;
+    }
+
+    &__br {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .advantages {
+    padding: 50px 20px;
+
+    &__content {
+      width: 100%;
+      padding: 30px 10px;
+    }
+
+    &__title {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 320px) {
+//   .advantages {
+//     padding: 50px 20px;
+
+//     &__content {
+//       width: 100%;
+//       padding: 30px 10px;
+//     }
+
+//     &__title {
+//       font-size: 20px;
+//       margin-bottom: 30px;
+//     }
+
+//     &__item {
+//       font-size: 20px;
+
+//       &:not(:last-child) {
+//         margin-bottom: 15px;
+//       }
+//     }
+//   }
+// }
+/* ? ======= ADVANTAGES MEDIA END ======= */

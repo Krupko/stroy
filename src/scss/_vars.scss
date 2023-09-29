@@ -1,0 +1,30 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Montserrat", sans-serif;
+  --content-width: 1300px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --color-white: #fff;
+  --color-label-border: #c5c4c4;
+  --color-bg: #f1efee;
+  --color-bg-hover: #e7e6e6;
+  --color-bg-active: #cecece;
+  --color-black: #000;
+  --color-black-light: #1c1005;
+  --color-title: #423b39;
+  --color-text: #413b39;
+  --color-grey: #8f8f8f;
+  --color-grey-text: #797979;
+  --color-grey-ligth: #d9d9d9;
+  --color-normal-button: #de3246;
+  --color-hover-button: #ff2c44;
+  --color-active-button: #9c1928;
+  --color-trans: transparent;
+
+  // radius
+  --radius5: 5px;
+}

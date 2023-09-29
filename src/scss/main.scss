@@ -1,0 +1,21 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header/header";
+@import "./components/footer/footer";
+
+/* ======= COUNTRY INDEX START ======= */
+
+@import "./components/index/hero";
+@import "./components/index/about";
+@import "./components/index/advantages";
+@import "./components/index/news";
+@import "./components/index/partners";
+@import "./components/index/map";
+
+/* ======= COUNTRY INDEX END ======= */
+/*  */

@@ -1,0 +1,68 @@
+/*? ======= MAP START ======= */
+.map {
+  width: 100%;
+  padding-top: 90px;
+  background-color: var(--color-white);
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__title {
+    width: 50%;
+    margin-bottom: 55px;
+
+    &::after {
+      width: 100%;
+      bottom: -10px;
+    }
+  }
+
+  &__wrap {
+    width: 100%;
+  }
+
+  &__iframe {
+    width: 100%;
+    height: 609px;
+    display: block;
+    border: none;
+  }
+}
+/*? ======= MAP END ======= */
+/*? ======= MAP MEDIA START ======= */
+@media screen and (max-width: 820px) {
+  .map {
+    padding-top: 50px;
+
+    &__title {
+      font-size: 25px;
+      margin-bottom: 48px;
+
+      &::after {
+        bottom: -5px;
+      }
+    }
+
+    &__iframe {
+      height: 472px;
+    }
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .map {
+    padding-top: 62px;
+
+    &__title {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 361px) {
+  .map {
+    padding-top: 21px;
+  }
+}
+/*? ======= MAP MEDIA END======= */

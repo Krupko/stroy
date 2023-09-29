@@ -1,0 +1,93 @@
+/* ======= INDEX HERO START ======= */
+.hero {
+  width: 100%;
+  height: 793px;
+  padding-top: 90px;
+
+  background-image: url(../img/hero-bg.jpg);
+  background-color: var(--color-title);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-white);
+
+  &__title {
+    width: 835px;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    width: 616px;
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    color: var(--color-white);
+  }
+
+  &__svg {
+    stroke: var(--color-white);
+  }
+}
+/* ======= INDEX HERO END ======= */
+/* ======= INDEX HERO MEDIA START ======= */
+@media screen and (max-width: 1001px) {
+  .hero {
+    height: 590px;
+    padding-top: 50px;
+
+    &__title {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__subtitle {
+      width: 616px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 836px) {
+  .hero {
+    height: 530px;
+    &__title {
+      width: 100%;
+      margin-bottom: 20px;
+
+      font-size: 40px;
+    }
+
+    &__subtitle {
+      width: 100%;
+      margin-bottom: 35px;
+
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .hero {
+    padding-top: 25px;
+
+    &__title {
+      font-size: 35px;
+    }
+
+    &__link {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .hero {
+    height: 612px;
+
+    // &__subtitle {
+    //   margin-bottom: 150px;
+    // }
+  }
+}
+/* ======= INDEX HERO MEDIA END ======= */

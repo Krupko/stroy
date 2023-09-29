@@ -1,0 +1,267 @@
+/* ? ======= PARTNERS START ======= */
+.partners {
+  width: 100%;
+  background-color: var(--colorwhite);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__picture {
+    width: 50%;
+    height: 611px;
+    background-color: var(--color-title);
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__right-wrapper {
+    max-width: 49%;
+    height: 100%;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+    &:after {
+      width: 100%;
+      bottom: -7px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    color: var(--color-black-light);
+    margin-bottom: 15px;
+  }
+
+  &__slogan {
+    color: var(--color-black-light);
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  &__form-wrapper-input {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    width: 50%;
+    height: 51px;
+    padding: 10px;
+    border: 2px solid var(--color-label-border);
+    border-radius: var(--radius5);
+
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    color: var(--color-label-border);
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 16px;
+    padding: 20px 10px;
+    border: 2px solid var(--color-label-border);
+    border-radius: var(--radius5);
+    outline: none;
+
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 23.8px */
+    color: var(--color-label-border);
+  }
+
+  &__form-wrapper-input-files {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__label-files {
+    padding: 0;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__input--files {
+    width: 160px;
+  }
+
+  &__label-svg {
+    width: 24px;
+    height: 24px;
+
+    use {
+      fill: var(--color-grey);
+    }
+  }
+
+  &__form-wrapper-button {
+    display: flex;
+    gap: 23px;
+  }
+
+  &__button {
+    display: flex;
+    gap: 23px;
+    border: none;
+    color: var(--color-white);
+  }
+
+  &__svg {
+    use {
+      stroke: white;
+    }
+  }
+
+  &__form-text {
+    width: 50%;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    color: var(--color-grey-text);
+  }
+}
+/* ? ======= PARTNERS END ======= */
+/* ? ======= PARTNERS MEDIA START ======= */
+@media screen and (max-width: 1330px) {
+  .partners {
+    &__picture {
+      height: 636px;
+    }
+  }
+}
+
+@media screen and (max-width: 1046px) {
+  .partners {
+    &__title {
+      font-size: 30px;
+    }
+    &__form-wrapper-input {
+      flex-direction: column;
+    }
+
+    &__form-wrapper-button {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__label {
+      width: 100%;
+    }
+
+    &__textarea {
+      height: 152px;
+    }
+
+    &__form-wrapper-input-files {
+      margin-bottom: 20px;
+    }
+
+    &__form-text {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 897px) {
+  .partners {
+    &__title {
+      margin-bottom: 0px;
+      &:after {
+        bottom: 50%;
+      }
+    }
+
+    &__subtitle {
+      margin-bottom: 0px;
+    }
+
+    &__slogan {
+      margin-bottom: 0px;
+    }
+
+    &__textarea {
+      margin-bottom: 0;
+    }
+
+    &__form-wrapper-input-files {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .partners {
+    &__picture {
+      display: none;
+    }
+
+    &__right-wrapper {
+      max-width: 100%;
+    }
+    &__title {
+      font-size: 20px;
+      margin-bottom: 35px;
+
+      &::after {
+        bottom: -5px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    &__slogan {
+      margin-bottom: 10px;
+    }
+
+    &__form-wrapper-input-files {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__button {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .partners {
+    &__form-wrapper-input-files {
+      flex-direction: column;
+    }
+  }
+}
+/* ? ======= PARTNERS MEDIA END ======= */

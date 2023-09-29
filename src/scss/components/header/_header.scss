@@ -1,0 +1,418 @@
+/*? ======= HEADER START ======= */
+.header {
+  width: 100%;
+  background: var(--color-white);
+  position: relative;
+  z-index: 10;
+
+  &__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+  }
+
+  &__logo {
+    width: 159px;
+    height: 84px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+
+  &__menu {
+    min-width: 797px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0 63px 0 65px;
+    padding: 0;
+
+    li {
+      height: 100%;
+      max-height: 103px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+      position: relative;
+      span {
+        display: flex;
+        align-items: center;
+      }
+
+      &:hover {
+        background-color: var(--color-hover-button);
+        transition: 0.3s;
+
+        & > a {
+          color: var(--color-white);
+        }
+
+        & > span > a {
+          color: var(--color-white);
+        }
+      }
+
+      &:hover > span > svg {
+        transform: rotate(-180deg);
+        transition: 0.3s;
+        stroke: var(--color-white);
+      }
+
+      a {
+        display: inline-block;
+        width: 100%;
+        min-height: 103px;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--color-text);
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      svg {
+        width: 12px;
+        height: 12px;
+        margin-left: 10px;
+        stroke: var(--color-text);
+        fill: transparent;
+        transition: 0.3s;
+      }
+
+      &:hover > ul {
+        display: flex;
+      }
+    }
+  }
+
+  &__button {
+    width: 216px;
+    height: 50px;
+    border: 2px solid var(--color-normal-button);
+    border-radius: var(--radius5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    transition: 0.3s;
+
+    &:hover {
+      border: 2px solid var(--color-hover-button);
+      transition: 0.3s;
+    }
+
+    &:active {
+      border: 2px solid var(--color-active-button);
+      transition: 0.3s;
+    }
+  }
+
+  &__button525 {
+    display: none;
+  }
+
+  /* ? стили для выпадающего меню начало */
+  &__menu-catalog,
+  &__menu-construction,
+  &__menu-production {
+    width: 316px;
+    padding: 0;
+    background-color: var(--color-white);
+    position: absolute;
+    left: 0;
+    top: 103px;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+  }
+
+  &__menu-production > li > a,
+  &__menu-construction > li > a,
+  &__menu-catalog > li > a {
+    width: 316px;
+    min-height: 51px;
+    padding-left: 20px;
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--color-white);
+    &:hover {
+      color: var(--color-title);
+    }
+  }
+
+  /* ? ======= burger start ======= */
+
+  &__wrap-button {
+    display: flex;
+    align-items: center;
+  }
+
+  &__burger {
+    height: 40px;
+    width: 47px;
+    margin-right: 44px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-text);
+      transition: 0.5s;
+    }
+  }
+
+  /* ? ======= burger end ======= */
+
+  &__menu1000 {
+    display: none;
+  }
+
+  &__menu-active {
+    display: flex;
+  }
+}
+
+/* ? ======= стили для выпадающего меню на 1000 начало ======= */
+
+@media screen and (max-width: 1331px) {
+  .header {
+    &__menu {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1226px) {
+  .header {
+    &__container {
+      border-bottom: 2px solid var(--color-grey-ligth);
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__menu1000 {
+      background-color: var(--color-white);
+      position: absolute;
+      padding: 0;
+      top: 103px;
+      left: 0;
+      list-style: none;
+      width: 100%;
+      justify-content: space-around;
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      ul > li:not(:last-child) {
+        margin-bottom: 25px;
+      }
+
+      & > ul > li > a,
+      & > #re > li:first-child > a,
+      .header__drop-down-menu > ul > li:first-child > a {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--color-title);
+      }
+
+      .header__drop-down-menu > ul:first-child {
+        margin-bottom: 50px;
+      }
+      & > #re > li > a,
+      .header__drop-down-menu > ul > li > a {
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--color-text);
+      }
+    }
+
+    /* ? ======= burger animation start ======= */
+    .header__burger {
+      display: flex;
+      position: relative;
+
+      &-close > span:nth-child(2) {
+        display: none;
+      }
+      &-close > span:nth-child(3) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transform: rotate(-45deg);
+        transition: 0.5s;
+      }
+      &-close > span:nth-child(1) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transform: rotate(45deg);
+        transition: 0.5s;
+      }
+    }
+  }
+  /* ? ======= burger animation end ======= */
+}
+
+@media screen and (max-width: 670px) {
+  .header {
+    &__menu1000 {
+      display: none;
+    }
+
+    &__menu {
+      background-color: var(--color-white);
+      min-width: 100%;
+      max-width: 100%;
+      padding: 30px 0;
+
+      position: absolute;
+      top: 104px;
+      left: 0;
+
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 20px;
+      gap: 20px;
+
+      & > li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-height: fit-content;
+        position: static;
+        &:hover {
+          background-color: white;
+
+          & > span > a {
+            color: var(--color-title);
+          }
+
+          & > span > svg {
+            stroke: var(--color-title);
+          }
+        }
+      }
+
+      & > li > a {
+        min-height: fit-content;
+        color: var(--color-title) !important;
+      }
+
+      & > li > span > a {
+        min-height: fit-content;
+      }
+    }
+
+    &__menu-catalog,
+    &__menu-construction,
+    &__menu-production {
+      width: 316px;
+      padding: 0;
+      position: static;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      display: none;
+    }
+
+    &__menu-catalog > li,
+    &__menu-construction > li,
+    &__menu-production > li {
+      padding: 15px 0;
+      &:hover {
+        background-color: white;
+      }
+    }
+
+    &__menu-production > li > a,
+    &__menu-construction > li > a,
+    &__menu-catalog > li > a {
+      width: 316px;
+      min-height: fit-content;
+      color: var(--color-text);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: var(--color-white);
+      padding-left: 0px;
+      &:hover {
+        color: var(--color-text);
+      }
+    }
+    &__menu-active670 {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .header {
+    &__wrap-button {
+      flex-direction: row-reverse;
+      gap: 22px;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__button525 {
+      width: 51px;
+      height: 51px;
+      border: 2px solid var(--color-hover-button);
+      border-radius: var(--radius5);
+      background-color: var(--color-white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__icon-phone {
+      width: 27px;
+      height: 27px;
+      use {
+        fill: var(--color-text);
+      }
+    }
+
+    &__burger {
+      width: 36px;
+      height: 32px;
+      margin-right: 0;
+    }
+  }
+}
+/* ? ======= HEADER END ======= */
