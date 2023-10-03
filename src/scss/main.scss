@@ -8,7 +8,7 @@
 @import "./components/header/header";
 @import "./components/footer/footer";
 
-/* ======= COUNTRY INDEX START ======= */
+/* ======= PAGE INDEX START ======= */
 
 @import "./components/index/hero";
 @import "./components/index/about";
@@ -16,6 +16,9 @@
 @import "./components/index/news";
 @import "./components/index/partners";
 @import "./components/index/map";
+/* ======= PAGE INDEX END ======= */
+/*? ======= PAGE CATALOG START =======  */
 
-/* ======= COUNTRY INDEX END ======= */
-/*  */
+@import "./components/catalog/hero";
+@import "./components/catalog/gallery";
+/*? ======= PAGE CATALOG END =======  */

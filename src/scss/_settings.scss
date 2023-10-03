@@ -15,7 +15,7 @@ html {
 }
 
 .page__body {
-  margin: 0;
+  margin: 0 auto;
   min-width: 320px;
   max-width: 1920px;
   min-height: 100%;
@@ -26,6 +26,7 @@ img {
   height: auto;
   //max-width: 100%; //закоментировано из-за логотипа
   object-fit: cover;
+  display: block;
 }
 
 a {
@@ -118,6 +119,16 @@ a {
   font-weight: 600;
   line-height: 130%; /* 65px */
   font-variant: small-caps;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    background-color: var(--color-white);
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .subtitle {
@@ -147,6 +158,16 @@ a {
     bottom: 0;
     right: 0;
   }
+}
+
+.title-h6 {
+  margin: 0;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 22.1px */
+  text-transform: uppercase;
+  color: var(--color-title);
 }
 
 .slogan {

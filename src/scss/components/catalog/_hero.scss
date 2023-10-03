@@ -1,0 +1,77 @@
+/*? ======= CATALOG HERO START =======  */
+.cat-hero {
+  width: 100%;
+  height: 408px;
+
+  padding: 90px 0;
+  background-image: url("../img/catalog-hero-bg.jpg");
+  background-color: var(--color-text);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    width: 386px;
+    text-align: right;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-white);
+
+    margin-bottom: 57px;
+
+    &::after {
+      display: block;
+      width: 100%;
+      bottom: -6px;
+    }
+  }
+
+  &__subtitle {
+    width: 870px;
+    font-weight: 600;
+    line-height: 122%;
+    color: var(--color-white);
+  }
+}
+/*? ======= CATALOG HERO END =======  */
+/*? ======= CATALOG HERO MEDIA START =======  */
+@media screen and (max-width: 1001px) {
+  .cat-hero {
+    padding: 50px 0;
+
+    &__title {
+      margin-bottom: 55px;
+    }
+
+    &__subtitle {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .cat-hero {
+    padding: 25px 0 50px 0;
+
+    &__title {
+      width: 209px;
+      font-size: 40px;
+
+      margin-bottom: 40px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .cat-hero {
+    &__title {
+      width: 150px;
+      font-size: 30px;
+    }
+  }
+}
+/*? ======= CATALOG HERO MEDIA END =======  */

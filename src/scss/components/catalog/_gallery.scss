@@ -1,0 +1,74 @@
+/*? ======= CAT-GALLERY START =======  */
+.cat-gallery {
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 80px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+  }
+
+  &__items--column1 > &__link {
+    height: 300px;
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+
+    &:nth-child(even) {
+      height: 400px;
+    }
+  }
+
+  &__items--column2 {
+    margin-top: 79px;
+  }
+
+  &__items--column2 > &__link {
+    height: 510px;
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  &__title {
+    width: 100%;
+    height: 79px;
+    border-top: 2px solid var(--color-text);
+    padding: 20px 10px 15px 10px;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+}
+/*? ======= CAT-GALLERY END =======  */
+/*? ======= CAT-GALLERY MEDIA START =======  */
+@media screen and (max-width: 1331px) {
+  .cat-gallery {
+    &__container {
+      // width: 100%;
+      grid-template-columns: repeat(4, 225px);
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .cat-gallery {
+  }
+}
+/*? ======= CAT-GALLERY MEDIA END =======  */
