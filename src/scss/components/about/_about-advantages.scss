@@ -1,0 +1,62 @@
+/*? ======= ABOUT-ADVANTAGES START ======= */
+.about-advantages {
+  padding-top: 75px;
+  padding-bottom: 26px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    width: 252px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__text {
+    margin-top: 42px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 22.1px */
+    text-transform: uppercase;
+    color: var(--color-text);
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -32px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 135px;
+      height: 2px;
+      background-color: var(--color-text);
+    }
+  }
+}
+/*? ======= ABOUT-ADVANTAGES END ======= */
+/*? ======= ABOUT-ADVANTAGES MEDIA START ======= */
+@media screen and (max-width: 1290px) {
+  .about-advantages {
+    &__container {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-advantages {
+    &__text {
+      font-size: 15px;
+    }
+  }
+}
+/*? ======= ABOUT-ADVANTAGES MEDIA END ======= */

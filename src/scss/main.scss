@@ -17,8 +17,13 @@
 @import "./components/index/partners";
 @import "./components/index/map";
 /* ======= PAGE INDEX END ======= */
-/*? ======= PAGE CATALOG START =======  */
 
+/*? ======= PAGE CATALOG START =======  */
 @import "./components/catalog/hero";
 @import "./components/catalog/gallery";
 /*? ======= PAGE CATALOG END =======  */
+
+/*? ======= PAGE ABOUT START =======  */
+@import "./components/about/about-hero";
+@import "./components/about/about-advantages";
+/*? ======= PAGE ABOUT END =======  */

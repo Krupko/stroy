@@ -1,0 +1,71 @@
+/*? ======= ABOUT-HERO START ======= */
+.about-hero {
+  width: 100%;
+  height: 377px;
+
+  padding: 94px 0 86px 0;
+  background-image: url("../img/about-hero-bg.png");
+  background-color: var(--color-text);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    width: 386px;
+    text-align: right;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-white);
+
+    margin-bottom: 53px;
+
+    &::after {
+      display: block;
+      width: 100%;
+      bottom: -6px;
+    }
+  }
+
+  &__subtitle {
+    width: 845px;
+    font-weight: 600;
+    line-height: 122%;
+    color: var(--color-white);
+  }
+}
+/*? ======= ABOUT-HER END ======= */
+/*? ======= ABOUT-HERO MEDIA START ======= */
+@media screen and (max-width: 1000px) {
+  .about-hero {
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 846px) {
+  .about-hero {
+    &__subtitle {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-hero {
+    &__title {
+      width: 100%;
+      margin-left: -20%;
+      font-size: 30px;
+
+      &::after {
+        width: 80%;
+      }
+    }
+
+    &__subtitle {
+      font-size: 20px;
+    }
+  }
+}
+/*? ======= ABOUT-HERO MEDIA END ======= */
