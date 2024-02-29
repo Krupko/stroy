@@ -59,7 +59,8 @@ a {
   appearance: none;
   border: none;
   border-radius: 0;
-  background-color: #fff;
+  outline: none;
+  background-color: var(--color-trans);
 
   &::-webkit-search-decoration,
   &::-webkit-search-cancel-button,
@@ -198,7 +199,6 @@ a {
   width: 252px;
   height: 51px;
   border-radius: var(--radius5);
-  background-color: var(--color-hover-button);
 
   display: flex;
   justify-content: center;
@@ -209,6 +209,33 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  cursor: pointer;
+}
+
+.btn--red {
+  background-color: var(--color-normal-button);
+  transition: 0.7s;
+
+  &:hover {
+    background-color: var(--color-hover-button);
+    transition: 0.7s;
+  }
+}
+
+.btn--white {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-normal-button);
+  transition: 0.7s;
+
+  &:hover {
+    background-color: var(--color-hover-bg);
+    border: 2px solid var(--color-hover-button);
+    transition: 0.7s;
+  }
+
+  &:active {
+    border: 2px solid var(--color-active-button);
+  }
 }
 /* ? ======== button style end =======  */
 

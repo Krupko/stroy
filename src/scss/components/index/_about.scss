@@ -73,19 +73,7 @@
   }
 
   &__link {
-    background-color: var(--color-trans);
-    border: 2px solid var(--color-normal-button);
-    transition: 0.3s;
     color: var(--color-title);
-
-    &:hover {
-      border: 2px solid var(--color-hover-button);
-      transition: 0.3s;
-    }
-
-    &:active {
-      border: 2px solid var(--color-active-button);
-    }
   }
 
   &__svg.svg-roow {
