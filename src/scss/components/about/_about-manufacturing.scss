@@ -1,0 +1,166 @@
+/*? ======= ABOUT-MANUFACTURING START ======= */
+.manufacturing {
+  width: 100%;
+  padding-top: 62px;
+  padding-bottom: 50px;
+
+  &__title {
+    font-weight: 600;
+    color: var(--color-text);
+    line-height: 130%;
+    text-transform: none;
+
+    &--h2 {
+      margin-bottom: clamp(1.875rem, 1.803rem + 0.32vw, 2.188rem);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  &__list-br {
+    display: none;
+  }
+
+  &__item {
+    height: 128px;
+    max-width: fit-content;
+    border-bottom: 2px solid var(--color-grey-border);
+    border-top: 2px solid var(--color-grey-border);
+    position: relative;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--color-text);
+
+    &:not(:last-child):after {
+      position: absolute;
+      content: url(../img/arrow.png);
+      top: 50%;
+      right: -35px;
+      transform: translateY(-50%);
+      width: 27px;
+      height: 8px;
+      color: var(--color-hover-button);
+    }
+  }
+
+  &__ecology {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__title--h4 {
+    width: 40%;
+  }
+
+  &__text {
+    width: 60%;
+    margin: 0;
+    padding-left: 20px;
+
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--color-text);
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__video-wrapper {
+    width: 100%;
+    height: 600px;
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
+/*? ======= ABOUT-MANUFACTURING END ======= */
+/*? ======= ABOUT-MANUFACTURING MEDIA START ======= */
+@media (max-width: 1160px) {
+  .manufacturing {
+    &__title--h2 {
+      width: 100%;
+    }
+
+    &__video-wrapper {
+      height: 505px;
+    }
+  }
+}
+
+@media (max-width: 795px) {
+  .manufacturing {
+    padding-top: 50px;
+
+    &__ecology {
+      flex-direction: column;
+    }
+
+    &__title--h4,
+    &__text {
+      min-width: 100%;
+      padding-left: 0;
+    }
+
+    &__list-br {
+      display: block;
+    }
+
+    &__video-wrapper {
+      height: 325px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .manufacturing {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      height: fit-content;
+      min-width: 100%;
+      padding: 20px 0;
+      justify-content: center;
+      &:not(:last-child):after {
+        left: 50%;
+        transform: rotate(90deg) translateX(75%);
+        top: 100%;
+      }
+    }
+
+    &__list-br,
+    &__item-br {
+      display: none;
+    }
+
+    &__video-wrapper {
+      height: 176px;
+    }
+  }
+}
+/*? ======= ABOUT-MANUFACTURING MEDIA END ======= */

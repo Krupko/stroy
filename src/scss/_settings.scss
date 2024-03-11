@@ -161,6 +161,15 @@ a {
   }
 }
 
+.title-h4 {
+  margin: 0;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 22.1px */
+  color: var(--color-text);
+}
+
 .title-h6 {
   margin: 0;
   font-size: 17px;
@@ -250,6 +259,7 @@ a {
 .frame-svg {
   max-width: 25px;
   max-height: 26px;
+  stroke: var(--color-normal-button);
 }
 
 /* ? ======= svg style end ======= */

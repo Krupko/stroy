@@ -1,13 +1,14 @@
 /*? ======= ABOUT-ADVANTAGES START ======= */
 .about-advantages {
   padding-top: 75px;
-  padding-bottom: 26px;
+  padding-bottom: 23px;
 
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    gap: 10px;
   }
 
   &__card {
@@ -19,8 +20,11 @@
   }
 
   &__text {
-    margin-top: 42px;
+    width: 100%;
+    margin-top: 20px;
     margin-bottom: 0;
+    padding: 20px 10px;
+
     text-align: center;
     font-size: 17px;
     font-style: normal;
@@ -30,10 +34,12 @@
     color: var(--color-text);
     position: relative;
 
+    border: 2px solid var(--color-hover-button);
+
     &::before {
       position: absolute;
       content: "";
-      top: -32px;
+      top: -11px;
       left: 50%;
       transform: translateX(-50%);
       width: 135px;

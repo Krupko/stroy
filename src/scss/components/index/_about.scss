@@ -66,12 +66,6 @@
     margin-bottom: 9px;
   }
 
-  &__svg {
-    use {
-      stroke: var(--color-normal-button);
-    }
-  }
-
   &__link {
     color: var(--color-title);
   }
